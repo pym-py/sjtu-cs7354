@@ -1,0 +1,50 @@
+任务一：
+git branch -c feature-newFunc
+git switch feature-newFunc
+git add .
+git commit -m 'Added diary entry for feature work'
+git add .
+git commit -m 'Added another diary entry for feature work'
+git log
+git rebase -i bf1ad18e65b3924d4b41d87ce35ee166ba154dc8
+git switch main
+git merge feature-newFunc
+
+任务二：
+git switch experiment
+git log
+git switch main
+git cherry-pick d58314c014e17c0f8091e4f715836e14815e443d
+git push 
+
+任务三：
+git switch dev
+git log
+f9ae8ba11305d96bb9db322e3488c754f176ede0
+git reset --soft f9ae8ba11305d96bb9db322e3488c754f176ede0
+git commit -m '任务三回退后提交'
+git push -f
+
+任务四：
+git switch main
+git add .
+git commit -m '任务四操作1'
+git switch feature-upload
+git diff main feature-upload --stat
+git switch main
+git merge feature-upload
+git add .
+git commit -m '手动解决冲突'
+git push
+
+任务五：
+git switch documentation
+git rebase -i 9cf2a7d78169e6b7d95ac2e489ddcfc770a79
+git rebase -i f33fa6662a891b8be
+git log
+git switch main
+git push
+
+
+
+
